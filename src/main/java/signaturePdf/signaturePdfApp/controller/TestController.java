@@ -55,8 +55,9 @@ public class TestController {
 
     @GetMapping("/urls/{id}")
     public String urls(@PathVariable Integer id, Model model) {
-        model.addAttribute("firstLink", url + "/first/" + id);
-        model.addAttribute("secondLink", url + "/second/" + id);
+        //model.addAttribute("firstLink", url + "/first/" + id);
+        model.addAttribute("firstLink", "/first/" + id);
+        model.addAttribute("secondLink", "/second/" + id);
         model.addAttribute("url", url);
         return "urls";
     }
