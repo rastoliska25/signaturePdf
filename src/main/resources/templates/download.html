@@ -1,0 +1,68 @@
+<Html>
+<html xmlns:th="http://www.thymeleaf.org">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script th:inline="javascript">
+
+    function download() {
+        var m = confirm("Want to download file?");
+        if (m) {
+            updateEventCount()
+        }
+    }
+
+    function updateEventCount() {
+        $.get("reload/[[${link}]]").done(function(fragment) {
+             if (fragment == 0) {
+             var x = confirm("The other person has not signed yet, do you want to download file anyway? ");
+             if (x) {
+
+                window.location.replace("/downloadPdf/[[${link}]]");
+
+                alert('The file has been downloaded successfully.');
+
+                window.location.replace("/upload");
+
+                localStorage.clear();
+                form.reset();
+                }
+            } else {
+
+                window.location.replace("/downloadPdf/[[${link}]]");
+
+                alert('The file has been downloaded successfully.');
+
+                window.location.replace("/upload");
+
+                localStorage.clear();
+                form.reset();
+            }
+        });
+    }
+
+
+</script>
+
+<head>
+    <title>Download your file</title>
+
+    <style>
+            #upload-button {
+            padding: 10px;
+            color: white;
+            background-color: #009578;
+            border: 1px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+
+
+    </style>
+</head>
+
+<body>
+
+<button id="download-button" onclick="download()"> Download</button>
+
+</body>
+
+</Html>

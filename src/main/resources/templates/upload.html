@@ -1,0 +1,61 @@
+<Html>
+<html xmlns:th="http://www.thymeleaf.org">
+<script th:inline="javascript">
+
+    async function uploadFile() {
+
+        if( document.getElementById("fileupload").files.length == 0 ){
+            alert('No file selected');
+        } else {
+
+            var fup = document.getElementById("fileupload");
+            var fileName = fup.value;
+            var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+
+            if(ext == "pdf" ) {
+
+                let formData = new FormData();
+                formData.append("file", fileupload.files[0]);
+
+                await fetch('/receivePdf/[[${link}]]', {
+                method: "POST",
+                body: formData
+                });
+                alert('The file has been uploaded successfully.');
+
+                window.location.replace('/urls/[[${link}]]');
+
+            } else {
+                alert('Only PDF files can be uploaded');
+            }
+        }
+    }
+
+</script>
+
+<head>
+    <title>Upload your file</title>
+
+    <style>
+            #upload-button {
+            padding: 10px;
+            color: white;
+            background-color: #009578;
+            border: 1px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+
+
+
+    </style>
+</head>
+
+<body>
+
+<input id="fileupload" type="file" name="fileupload"/>
+<button id="upload-button" onclick="uploadFile()"> Upload</button>
+
+</body>
+
+</Html>
