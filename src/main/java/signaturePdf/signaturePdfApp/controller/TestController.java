@@ -43,8 +43,6 @@ public class TestController {
     @Value("${deleteTimeInHours}")
     private Long deleteTimeInHours;
 
-    Integer count = 10;
-
     @GetMapping("/upload")
     public String upload(Model model) {
         Integer random = new Random().nextInt(100000000, 999999999);
@@ -55,7 +53,6 @@ public class TestController {
 
     @GetMapping("/urls/{id}")
     public String urls(@PathVariable Integer id, Model model) {
-        //model.addAttribute("firstLink", url + "/first/" + id);
         model.addAttribute("firstLink", url + "/first/" + id);
         model.addAttribute("secondLink", url + "/second/" + id);
         model.addAttribute("url", url);

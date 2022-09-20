@@ -62,3 +62,15 @@
 2022-09-20 16:34:30.395 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2022-09-20 16:34:33.340 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 379209399
 2022-09-20 16:34:33.393 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-20 16:49:24.794 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 106112 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-20 16:49:24.806 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-20 16:49:25.644 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-20 16:49:25.657 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-20 16:49:25.657 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-20 16:49:25.658 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-20 16:49:25.736 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-20 16:49:25.737 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 888 ms
+2022-09-20 16:49:25.962 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-20 16:49:26.094 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-20 16:49:26.117 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-20 16:49:26.126 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.593 seconds (JVM running for 2.257)
