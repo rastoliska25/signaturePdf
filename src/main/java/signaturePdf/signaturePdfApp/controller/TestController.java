@@ -227,4 +227,20 @@ public class TestController {
 
         return new ResponseEntity<>(signed, HttpStatus.OK);
     }
+
+
+
+
+    @GetMapping("/overview")
+    public ResponseEntity getOverview() {
+
+        System.out.println(streamMap);
+
+
+        return new ResponseEntity<>(streamMap, HttpStatus.OK);
+    }
+
+
+
+
 }
