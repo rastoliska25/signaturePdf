@@ -6,24 +6,30 @@
     var i = 0;
     var stop = 5;
     for (i = 0; i < 5; i++) {
-      var v = document.createElement('input');
+
+      var v = document.createElement('button');
+      v.style.width = '300px';
+      v.style.height = '20px';
       v.type = "button";
+      //v.onclick = teest;
+
+     v.addEventListener('click', function(){
+      alert('hello');
+     });
+
+
       v.value = "[[${link}]] " + i;
       document.getElementById('test').appendChild(v);
-
-
-
-      v.type = "paragraph";
-      v.value = "[[${link}]] " + i;
-      document.getElementById('test').appendChild(v);
-
 
     }
   }
 
+  function teest() {
+    alert('hello');
+  }
 
   function LoopTest2() {
-    let json = [[${map_list2}]];
+    let json = [[${ map_list2 }]];
 
 
     for (let i = 0; i < json.length; i++) {
@@ -34,8 +40,8 @@
 
 
 
-      var y = document.createElement('label');
-      y.type = "label";
+      var y = document.createElement('input');
+      y.type = "text";
       y.value = "ID: " + (obj.id);
       document.getElementById('test').appendChild(y);
 
@@ -48,6 +54,16 @@
       z.type = "text";
       z.value = (obj.signatureTwo);
       document.getElementById('test').appendChild(z);
+
+      var q = document.createElement('button');
+      q.type = "button";
+      q.value = (obj.id);
+      q.style.width = '300px';
+      q.style.height = '20px';
+      q.name = "testovanie";
+      q.onclick = alert('hello');
+      document.getElementById('test').appendChild(q);
+
 
       var linebreak = document.createElement("br");
       document.getElementById('test').appendChild(linebreak);
@@ -96,30 +112,11 @@
   <br>
   <br>
 
-  <h2> Link pre druhý podpis: </h2>
-
   <input type="button" value="save" id="btn" size="30" onclick="LoopTest()" style="position:can;top:30%;left:7%;">
   <input type="button" value="save" id="btn2" size="30" onclick="LoopTest2()" style="position:can;top:30%;left:7%;">
 
 
-
-
-  <div id="test" class="nav">
-    Music I Like
-  </div>
-
-
-
-  <tr th:each="map : ${map_list2}">
-    <td> ID:</td>
-    <td th:text="${map.get('id')}"></td>
-    <td> Nume:</td>
-    <td th:text="${map.get('signatureOne')}"></td>
-  </tr>
-
-  <br>
-  <br>
-  <br>
+  <h1 id="test"> </h1>
 
 
 </body>
