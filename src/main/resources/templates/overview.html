@@ -13,9 +13,10 @@
       v.type = "button";
       //v.onclick = teest;
 
-     v.addEventListener('click', function(){
-      alert('hello');
-     });
+      v.addEventListener('click', function () {
+        //alert('hello');
+        window.location.replace("/downloadPdf/[[${link}]]");
+      });
 
 
       v.value = "[[${link}]] " + i;
@@ -24,21 +25,12 @@
     }
   }
 
-  function teest() {
-    alert('hello');
-  }
-
   function LoopTest2() {
     let json = [[${ map_list2 }]];
-
 
     for (let i = 0; i < json.length; i++) {
       let obj = json[i];
       console.log(obj.id + ", " + obj.signatureOne + ", " + obj.signatureTwo);
-
-
-
-
 
       var y = document.createElement('input');
       y.type = "text";
@@ -47,6 +39,7 @@
 
       var v = document.createElement('input');
       v.type = "text";
+      v.style.width = '400px';
       v.value = (obj.signatureOne);
       document.getElementById('test').appendChild(v);
 
@@ -61,8 +54,11 @@
       q.style.width = '300px';
       q.style.height = '20px';
       q.name = "testovanie";
-      q.onclick = alert('hello');
       document.getElementById('test').appendChild(q);
+
+      q.addEventListener('click', function () {
+        window.location.replace("/downloadPdf/" + obj.id);
+      });
 
 
       var linebreak = document.createElement("br");
@@ -92,12 +88,7 @@
       console.log(obj.id);
     }
   }
-
-
-
 </script>
-
-
 
 
 <head>
@@ -115,9 +106,7 @@
   <input type="button" value="save" id="btn" size="30" onclick="LoopTest()" style="position:can;top:30%;left:7%;">
   <input type="button" value="save" id="btn2" size="30" onclick="LoopTest2()" style="position:can;top:30%;left:7%;">
 
-
   <h1 id="test"> </h1>
-
 
 </body>
 
