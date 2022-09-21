@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<script th:inline="javascript">
+
+  function LoopTest() {
+    var i = 0;
+    var stop = 5;
+    for (i = 0; i < 5; i++) {
+      var v = document.createElement('input');
+      v.type = "button";
+      v.value = "Button " + i;
+      document.getElementById('test').appendChild(v);
+    }
+  }
+
+</script>
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<body>
+  <h2> Link pre prvý podpis: </h2>
+
+  <br>
+  <br>
+  <br>
+
+  <h2> Link pre druhý podpis: </h2>
+
+  <input type="button" value="save" id="btn" size="30" onclick="LoopTest()" style="position:can;top:30%;left:7%;">
+
+
+
+
+
+  <div id="test" class="nav">
+    Music I Like
+  </div>
+
+
+
+
+</body>
+
+</html>
