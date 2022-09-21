@@ -227,48 +227,24 @@ public class TestController {
         } else {
             signed = 0;
         }
-
         return new ResponseEntity<>(signed, HttpStatus.OK);
     }
 
-
-
-
     @GetMapping("/overview")
     public String getOverview(Model model) {
-
-
-        //----------
-        List<Map<String, String>> mapList = new ArrayList<>();
-
-        Map<String, String> firstMap = new HashMap<>();
-        firstMap.put("id", "1");
-        firstMap.put("name", "test_name_1");
-
-        Map<String, String> secondMap = new HashMap<>();
-        secondMap.put("id", "2");
-        secondMap.put("name", "test_name_2");
-
-        mapList.add(firstMap);
-        mapList.add(secondMap);
-
-        model.addAttribute("map_list", mapList);
-        //-----------
-
-
-
-        System.out.println(mapList);
-        System.out.println(streamMap.values());
-        model.addAttribute("map_list", mapList);
-        model.addAttribute("map_list2", streamMap.values());
+        model.addAttribute("map_list", streamMap.values());
         return "overview";
     }
-
 
     @GetMapping("/overviewTest")
     public ResponseEntity overviewTest() {
         return new ResponseEntity<>(streamMap.values(), HttpStatus.OK);
     }
 
-
+    @GetMapping("/delete/{id}")
+    public ResponseEntity delete(@PathVariable Integer id) {
+        streamMap.remove(id);
+        Logging.logger.info("File was deleted with id: " + id);
+        return new ResponseEntity<>("deleted", HttpStatus.OK);
+    }
 }

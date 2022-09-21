@@ -3,30 +3,7 @@
 <script th:inline="javascript">
 
   function LoopTest() {
-    var i = 0;
-    var stop = 5;
-    for (i = 0; i < 5; i++) {
-
-      var v = document.createElement('button');
-      v.style.width = '300px';
-      v.style.height = '20px';
-      v.type = "button";
-      //v.onclick = teest;
-
-      v.addEventListener('click', function () {
-        //alert('hello');
-        window.location.replace("/downloadPdf/[[${link}]]");
-      });
-
-
-      v.value = "[[${link}]] " + i;
-      document.getElementById('test').appendChild(v);
-
-    }
-  }
-
-  function LoopTest2() {
-    let json = [[${ map_list2 }]];
+    let json = [[${ map_list }]];
 
     for (let i = 0; i < json.length; i++) {
       let obj = json[i];
@@ -39,12 +16,13 @@
 
       var v = document.createElement('input');
       v.type = "text";
-      v.style.width = '400px';
+      v.style.width = '250px';
       v.value = (obj.signatureOne);
       document.getElementById('test').appendChild(v);
 
       var z = document.createElement('input');
       z.type = "text";
+      z.style.width = '250px';
       z.value = (obj.signatureTwo);
       document.getElementById('test').appendChild(z);
 
@@ -56,40 +34,33 @@
       q.name = "testovanie";
       document.getElementById('test').appendChild(q);
 
+      var m = document.createElement('button');
+      m.type = "button";
+      m.value = (obj.id);
+      m.style.width = '300px';
+      m.style.height = '20px';
+      m.name = "testovanie";
+      document.getElementById('test').appendChild(m);
+
+
       q.addEventListener('click', function () {
         window.location.replace("/downloadPdf/" + obj.id);
       });
 
+      m.addEventListener('click', function () {
+        window.location.replace("/delete/" + obj.id);
+        form.reset();
+      });
 
       var linebreak = document.createElement("br");
       document.getElementById('test').appendChild(linebreak);
 
-    }
+    };
 
   }
 
-  function LoopTest2test() {
-    let json = [{
-      "id": "1",
-      "msg": "hi",
-      "tid": "2013-05-05 23:35",
-      "fromWho": "hello1@email.se"
-    },
-    {
-      "id": "2",
-      "msg": "there",
-      "tid": "2013-05-05 23:45",
-      "fromWho": "hello2@email.se"
-    }];
 
-    for (let i = 0; i < json.length; i++) {
-      let obj = json[i];
-
-      console.log(obj.id);
-    }
-  }
 </script>
-
 
 <head>
   <meta charset="UTF-8">
@@ -97,16 +68,14 @@
 </head>
 
 <body>
-  <h2> Link pre prvý podpis: </h2>
+  <h2> Documents overview: </h2>
 
-  <br>
   <br>
   <br>
 
   <input type="button" value="save" id="btn" size="30" onclick="LoopTest()" style="position:can;top:30%;left:7%;">
-  <input type="button" value="save" id="btn2" size="30" onclick="LoopTest2()" style="position:can;top:30%;left:7%;">
 
-  <h1 id="test"> </h1>
+  <h1 id="test"></h1>
 
 </body>
 
