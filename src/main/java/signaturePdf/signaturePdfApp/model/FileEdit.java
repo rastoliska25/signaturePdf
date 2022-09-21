@@ -17,6 +17,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
 
@@ -38,6 +39,8 @@ public class FileEdit {
 
     public String signatureOne;
     public String signatureTwo;
+
+    public String dateTime;
 
     public void convertFile(MultipartFile multipartFile) throws IOException {
         file = convert(multipartFile);

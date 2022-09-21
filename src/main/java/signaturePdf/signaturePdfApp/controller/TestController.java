@@ -94,6 +94,7 @@ public class TestController {
 
         FileEdit fileEdit = new FileEdit();
         fileEdit.id = id;
+        fileEdit.dateTime = String.valueOf(java.time.LocalDateTime.now());
         fileEdit.signatureOne = url + "/first/" + id;
         fileEdit.signatureTwo = url + "/second/" + id;
         fileEdit.signature1 = this.signature1;
@@ -234,11 +235,6 @@ public class TestController {
     public String getOverview(Model model) {
         model.addAttribute("map_list", streamMap.values());
         return "overview";
-    }
-
-    @GetMapping("/overviewTest")
-    public ResponseEntity overviewTest() {
-        return new ResponseEntity<>(streamMap.values(), HttpStatus.OK);
     }
 
     @GetMapping("/delete/{id}")
