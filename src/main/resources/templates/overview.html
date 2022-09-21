@@ -24,6 +24,8 @@
 
   function LoopTest2() {
     let json = [[${map_list2}]];
+
+
     for (let i = 0; i < json.length; i++) {
       let obj = json[i];
       console.log(obj.id + ", " + obj.signatureOne + ", " + obj.signatureTwo);
@@ -32,13 +34,26 @@
 
 
 
+      var y = document.createElement('label');
+      y.type = "label";
+      y.value = "ID: " + (obj.id);
+      document.getElementById('test').appendChild(y);
+
       var v = document.createElement('input');
-      v.type = "paragraph";
-      v.value = (obj.id + ", " + obj.signatureOne + ", " + obj.signatureTwo) + i;
+      v.type = "text";
+      v.value = (obj.signatureOne);
       document.getElementById('test').appendChild(v);
 
+      var z = document.createElement('input');
+      z.type = "text";
+      z.value = (obj.signatureTwo);
+      document.getElementById('test').appendChild(z);
+
+      var linebreak = document.createElement("br");
+      document.getElementById('test').appendChild(linebreak);
 
     }
+
   }
 
   function LoopTest2test() {
