@@ -200,7 +200,7 @@ public class TestController {
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_PDF);
 
-            String filename = "output.pdf";
+            String filename = "output" + id + ".pdf";
 
             Logging.logger.info("PDF was downloaded: " + filename);
 
