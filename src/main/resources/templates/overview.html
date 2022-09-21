@@ -13,6 +13,38 @@
     }
   }
 
+
+  function LoopTest2test() {
+    const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+    const obj = JSON.parse(text);
+    obj.birth = new Date(obj.birth);
+
+    console.log(obj.name + ", " + obj.birth);
+  }
+
+  function LoopTest2() {
+    let json = [{
+      "id": "1",
+      "msg": "hi",
+      "tid": "2013-05-05 23:35",
+      "fromWho": "hello1@email.se"
+    },
+    {
+      "id": "2",
+      "msg": "there",
+      "tid": "2013-05-05 23:45",
+      "fromWho": "hello2@email.se"
+    }];
+
+    for (let i = 0; i < json.length; i++) {
+      let obj = json[i];
+
+      console.log(obj.id);
+    }
+  }
+
+
+
 </script>
 
 
@@ -33,7 +65,7 @@
   <h2> Link pre druhý podpis: </h2>
 
   <input type="button" value="save" id="btn" size="30" onclick="LoopTest()" style="position:can;top:30%;left:7%;">
-
+  <input type="button" value="save" id="btn2" size="30" onclick="LoopTest2()" style="position:can;top:30%;left:7%;">
 
 
 
@@ -43,6 +75,17 @@
   </div>
 
 
+
+  <tr th:each="map : ${map_list}">
+    <td> ID:</td>
+    <td th:text="${map.get('id')}"></td>
+    <td> Nume:</td>
+    <td th:text="${map.get('name')}"></td>
+  </tr>
+
+  <br>
+  <br>
+  <br>
 
 
 </body>

@@ -24,6 +24,8 @@ import java.util.Objects;
 @Component
 public class FileEdit {
 
+    public Integer ID = 10000;
+
     public String signature1;
     public String signature2;
 
