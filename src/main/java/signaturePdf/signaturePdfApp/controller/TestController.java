@@ -232,9 +232,9 @@ public class TestController {
 
 
     @GetMapping("/overview")
-    public ResponseEntity getOverview() {
-        System.out.println(streamMap);
-
-        return new ResponseEntity<>(streamMap, HttpStatus.OK);
+    public String getOverview(Model model) {
+        System.out.println(streamMap.values());
+        model.addAttribute("link", 150000);
+        return "overview";
     }
 }
