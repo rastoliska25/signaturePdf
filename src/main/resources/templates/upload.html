@@ -17,10 +17,13 @@
                 let formData = new FormData();
                 formData.append("file", fileupload.files[0]);
 
+                document.getElementById('MyHeading').innerText = "Uploading file";
+
                 await fetch('/receivePdf/[[${link}]]', {
                 method: "POST",
                 body: formData
                 });
+                document.getElementById('MyHeading').innerText = "";
                 alert('The file has been uploaded successfully.');
 
                 window.location.replace('/urls/[[${link}]]');
@@ -52,6 +55,8 @@
 
 <input id="fileupload" type="file" name="fileupload"/>
 <button id="upload-button" onclick="uploadFile()"> Upload</button>
+
+<h1 id="MyHeading" style="position:absolute;top:50%;left:50%;"> </h1>
 
 </body>
 
