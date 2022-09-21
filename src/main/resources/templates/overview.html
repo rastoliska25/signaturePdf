@@ -10,6 +10,14 @@
       v.type = "button";
       v.value = "[[${link}]] " + i;
       document.getElementById('test').appendChild(v);
+
+
+
+      v.type = "paragraph";
+      v.value = "[[${link}]] " + i;
+      document.getElementById('test').appendChild(v);
+
+
     }
   }
 
@@ -19,6 +27,17 @@
     for (let i = 0; i < json.length; i++) {
       let obj = json[i];
       console.log(obj.id + ", " + obj.signatureOne + ", " + obj.signatureTwo);
+
+
+
+
+
+      var v = document.createElement('input');
+      v.type = "paragraph";
+      v.value = (obj.id + ", " + obj.signatureOne + ", " + obj.signatureTwo) + i;
+      document.getElementById('test').appendChild(v);
+
+
     }
   }
 
@@ -76,11 +95,11 @@
 
 
 
-  <tr th:each="map : ${map_list}">
+  <tr th:each="map : ${map_list2}">
     <td> ID:</td>
     <td th:text="${map.get('id')}"></td>
     <td> Nume:</td>
-    <td th:text="${map.get('name')}"></td>
+    <td th:text="${map.get('signatureOne')}"></td>
   </tr>
 
   <br>
