@@ -93,6 +93,9 @@ public class TestController {
     public ResponseEntity<FileUploadResponse> uploadFiles(@PathVariable Integer id, @RequestParam("file") MultipartFile multipartFile) {
 
         FileEdit fileEdit = new FileEdit();
+        fileEdit.id = id;
+        fileEdit.signatureOne = url + "/first/" + id;
+        fileEdit.signatureTwo = url + "/second/" + id;
         fileEdit.signature1 = this.signature1;
         fileEdit.signature2 = this.signature2;
 

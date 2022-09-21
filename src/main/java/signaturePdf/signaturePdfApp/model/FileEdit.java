@@ -24,7 +24,7 @@ import java.util.Objects;
 @Component
 public class FileEdit {
 
-    public Integer ID = 10000;
+    public Integer id;
 
     public String signature1;
     public String signature2;
@@ -35,6 +35,9 @@ public class FileEdit {
 
     public Integer firstSignature = 0;
     public Integer secondSignature = 0;
+
+    public String signatureOne;
+    public String signatureTwo;
 
     public void convertFile(MultipartFile multipartFile) throws IOException {
         file = convert(multipartFile);
