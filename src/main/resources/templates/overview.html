@@ -48,6 +48,7 @@
       var q = document.createElement('button');
       q.type = "button";
       q.value = (obj.id);
+      q.style.value = "testing";
       q.style.width = '300px';
       q.style.height = '20px';
       q.name = "testovanie";
@@ -69,11 +70,14 @@
       m.addEventListener('click', function () {
         var x = confirm("Do you really want to remove document? ");
         if (x) {
+          var urlDelete = '/delete/' + obj.id;
+          await fetch(urlDelete, {
+            method: "POST",
+          });
 
-          window.location.replace("/delete/" + obj.id);
+          alert('Document has been deleted successfully: ' + obj.id);
           form.reset();
         }
-
       });
 
       var linebreak = document.createElement("br");

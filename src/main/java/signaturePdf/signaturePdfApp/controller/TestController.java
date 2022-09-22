@@ -10,10 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import signaturePdf.signaturePdfApp.Logging;
 import signaturePdf.signaturePdfApp.model.FileEdit;
@@ -237,10 +234,10 @@ public class TestController {
         return "overview";
     }
 
-    @GetMapping("/delete/{id}")
-    public ResponseEntity delete(@PathVariable Integer id) {
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    @PostMapping("/delete/{id}")
+    public void deleteTest(@PathVariable Integer id) {
         streamMap.remove(id);
         Logging.logger.info("File was deleted with id: " + id);
-        return new ResponseEntity<>("deleted", HttpStatus.OK);
     }
 }
