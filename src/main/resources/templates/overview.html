@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script th:inline="javascript">
 
   function LoopDocuments() {
@@ -45,38 +46,39 @@
       z.value = (obj.signatureTwo);
       document.getElementById('test').appendChild(z);
 
-      var q = document.createElement('button');
+      var q = document.createElement('input');
       q.type = "button";
-      q.value = (obj.id);
+      q.value = 'Download document';
       q.style.value = "testing";
       q.style.width = '300px';
       q.style.height = '20px';
       q.name = "testovanie";
       document.getElementById('test').appendChild(q);
 
-      var m = document.createElement('button');
+      var m = document.createElement('input');
       m.type = "button";
-      m.value = (obj.id);
+      m.value = 'Delete document';
       m.style.width = '300px';
       m.style.height = '20px';
       m.name = "testovanie";
       document.getElementById('test').appendChild(m);
 
-
       q.addEventListener('click', function () {
-        window.location.replace("/downloadPdf/" + obj.id);
+        var x = confirm('Do you want to download document? ' + obj.id);
+        if (x) {
+          window.location.replace("/downloadPdf/" + obj.id);
+        }
       });
 
-      m.addEventListener('click', function () {
-        var x = confirm("Do you really want to remove document? ");
+      m.addEventListener('click', async function () {
+        var x = confirm('Do you really want to remove document? ' + obj.id);
         if (x) {
           var urlDelete = '/delete/' + obj.id;
           await fetch(urlDelete, {
             method: "POST",
           });
 
-          alert('Document has been deleted successfully: ' + obj.id);
-          form.reset();
+          location.reload();
         }
       });
 
@@ -96,10 +98,10 @@
 
 <body onload="LoopDocuments()">
   <h2> Documents overview: </h2>
-
   <br>
 
   <h1 id="test"></h1>
+
 
 </body>
 

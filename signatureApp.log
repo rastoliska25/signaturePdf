@@ -13803,3 +13803,287 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [delet
 2022-09-22 07:36:54.872 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
 2022-09-22 07:36:58.359 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 689232184
 2022-09-22 07:36:58.406 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 07:38:04.549 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 36120 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 07:38:04.565 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 07:38:05.446 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 07:38:05.458 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:38:05.459 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 07:38:05.459 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 07:38:05.534 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 07:38:05.534 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 904 ms
+2022-09-22 07:38:05.754 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 07:38:05.892 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:38:05.912 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 07:38:05.920 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.631 seconds (JVM running for 2.281)
+2022-09-22 07:38:13.151 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 07:38:13.151 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 07:38:13.151 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-09-22 07:38:16.619 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 234719368
+2022-09-22 07:38:16.665 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 07:38:25.819 [http-nio-8080-exec-6] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 234719368
+2022-09-22 07:42:07.058 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+2022-09-22 07:42:11.093 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 254368 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 07:42:11.106 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 07:42:12.128 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 07:42:12.142 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:42:12.143 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 07:42:12.143 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 07:42:12.228 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 07:42:12.228 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1081 ms
+2022-09-22 07:42:12.510 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 07:42:12.640 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:42:12.661 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 07:42:12.670 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.843 seconds (JVM running for 2.513)
+2022-09-22 07:42:14.166 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 07:42:14.166 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 07:42:14.167 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-09-22 07:42:20.470 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 892621369
+2022-09-22 07:42:20.522 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 07:42:54.822 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 186256 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 07:42:54.833 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 07:42:55.685 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 07:42:55.700 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:42:55.701 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 07:42:55.701 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 07:42:55.788 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 07:42:55.788 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 911 ms
+2022-09-22 07:42:56.051 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 07:42:56.181 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:42:56.203 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 07:42:56.211 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.665 seconds (JVM running for 2.358)
+2022-09-22 07:42:57.830 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 07:42:57.831 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 07:42:57.831 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-09-22 07:43:06.229 [http-nio-8080-exec-4] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 271989045
+2022-09-22 07:43:06.278 [http-nio-8080-exec-4] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 07:43:18.584 [http-nio-8080-exec-7] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 271989045
+2022-09-22 07:46:35.763 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 163888 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 07:46:35.774 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 07:46:36.621 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 07:46:36.636 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:46:36.637 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 07:46:36.637 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 07:46:36.717 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 07:46:36.717 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 901 ms
+2022-09-22 07:46:36.951 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 07:46:37.071 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:46:37.094 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 07:46:37.105 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.598 seconds (JVM running for 2.26)
+2022-09-22 07:46:40.386 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 07:46:40.386 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 07:46:40.387 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-09-22 07:46:47.368 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 789457047
+2022-09-22 07:46:47.417 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 07:46:54.332 [http-nio-8080-exec-6] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 789457047
+2022-09-22 07:47:28.821 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 134532 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 07:47:28.834 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 07:47:29.749 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 07:47:29.763 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:47:29.763 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 07:47:29.764 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 07:47:29.843 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 07:47:29.843 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 968 ms
+2022-09-22 07:47:30.078 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 07:47:30.244 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:47:30.270 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 07:47:30.279 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.719 seconds (JVM running for 2.366)
+2022-09-22 07:47:40.010 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 252312 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 07:47:40.022 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 07:47:40.990 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 07:47:41.004 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:47:41.005 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 07:47:41.005 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 07:47:41.085 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 07:47:41.085 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1017 ms
+2022-09-22 07:47:41.315 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 07:47:41.451 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:47:41.471 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 07:47:41.482 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.754 seconds (JVM running for 2.429)
+2022-09-22 07:47:43.228 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 07:47:43.228 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 07:47:43.229 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-09-22 07:47:46.577 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 883154771
+2022-09-22 07:47:46.624 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 07:47:53.468 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 870666251
+2022-09-22 07:47:53.475 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test2.pdf  size: 192039 bytes
+2022-09-22 07:48:02.227 [http-nio-8080-exec-8] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 883154771
+2022-09-22 07:48:09.830 [http-nio-8080-exec-10] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 870666251
+2022-09-22 07:48:44.493 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 210488 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 07:48:44.513 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 07:48:45.397 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 07:48:45.411 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:48:45.411 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 07:48:45.412 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 07:48:45.499 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 07:48:45.499 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 938 ms
+2022-09-22 07:48:45.752 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 07:48:45.889 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:48:45.916 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 07:48:45.926 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.723 seconds (JVM running for 2.409)
+2022-09-22 07:48:52.169 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 07:48:52.169 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 07:48:52.170 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-09-22 07:48:55.742 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 356129451
+2022-09-22 07:48:55.793 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test2.pdf  size: 192039 bytes
+2022-09-22 07:49:04.206 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 415175696
+2022-09-22 07:49:04.213 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 07:49:13.689 [http-nio-8080-exec-8] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 356129451
+2022-09-22 07:49:17.459 [http-nio-8080-exec-10] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output415175696.pdf
+2022-09-22 07:49:56.716 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 174560 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 07:49:56.729 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 07:49:57.648 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 07:49:57.660 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:49:57.661 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 07:49:57.661 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 07:49:57.743 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 07:49:57.744 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 964 ms
+2022-09-22 07:49:58.003 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 07:49:58.131 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 07:49:58.150 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 07:49:58.158 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.734 seconds (JVM running for 2.435)
+2022-09-22 07:50:11.529 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 07:50:11.529 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 07:50:11.530 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-09-22 07:50:15.115 [http-nio-8080-exec-4] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 266526052
+2022-09-22 07:50:15.164 [http-nio-8080-exec-4] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 07:50:22.523 [http-nio-8080-exec-7] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 827934383
+2022-09-22 07:50:22.535 [http-nio-8080-exec-7] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test2.pdf  size: 192039 bytes
+2022-09-22 07:50:29.860 [http-nio-8080-exec-9] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 438716147
+2022-09-22 07:50:29.866 [http-nio-8080-exec-9] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 07:50:54.731 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was received: image.png  , size: 6590 bytes
+2022-09-22 07:50:54.881 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was converted from PNG to JPG
+2022-09-22 07:50:54.907 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - Second signature was added to PDF file to coordinates x: 424.9 y: 383.95
+2022-09-22 07:51:03.353 [http-nio-8080-exec-7] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output438716147.pdf
+2022-09-22 07:51:08.315 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output266526052.pdf
+2022-09-22 07:51:15.611 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+2022-09-22 07:51:15.612 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+2022-09-22 07:51:15.612 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+2022-09-22 07:51:15.612 [http-nio-8080-exec-9] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output827934383.pdf
+2022-09-22 07:51:27.423 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was received: image.png  , size: 7516 bytes
+2022-09-22 07:51:27.446 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was converted from PNG to JPG
+2022-09-22 07:51:27.449 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - First signature was added to PDF file to coordinates x: 138.5 y: 698.86005
+2022-09-22 07:51:32.717 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+2022-09-22 07:51:32.717 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output266526052.pdf
+2022-09-22 07:51:50.438 [http-nio-8080-exec-9] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output266526052.pdf
+2022-09-22 07:52:01.038 [http-nio-8080-exec-10] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output827934383.pdf
+2022-09-22 07:52:17.587 [http-nio-8080-exec-1] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 266526052
+2022-09-22 07:52:20.523 [http-nio-8080-exec-4] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output438716147.pdf
+2022-09-22 07:52:25.362 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output827934383.pdf
+2022-09-22 07:52:25.362 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+2022-09-22 07:52:25.362 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+2022-09-22 07:52:25.362 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+2022-09-22 07:52:25.362 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+2022-09-22 08:13:34.706 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 226224 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 08:13:34.720 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 08:13:35.636 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 08:13:35.651 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:13:35.651 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 08:13:35.652 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 08:13:35.742 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 08:13:35.742 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 984 ms
+2022-09-22 08:13:35.999 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 08:13:36.141 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:13:36.172 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 08:13:36.183 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.741 seconds (JVM running for 2.406)
+2022-09-22 08:13:37.026 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 08:13:37.027 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 08:13:37.027 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-09-22 08:13:50.277 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 719020108
+2022-09-22 08:13:50.329 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test2.pdf  size: 192039 bytes
+2022-09-22 08:15:03.096 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 81652 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 08:15:03.109 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 08:15:03.981 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 08:15:03.993 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:15:03.993 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 08:15:03.993 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 08:15:04.078 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 08:15:04.078 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 924 ms
+2022-09-22 08:15:04.324 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 08:15:04.473 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:15:04.495 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 08:15:04.503 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.667 seconds (JVM running for 2.316)
+2022-09-22 08:15:10.173 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 08:15:10.173 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 08:15:10.173 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-09-22 08:15:14.408 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 694423078
+2022-09-22 08:15:14.456 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 08:16:12.271 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 190264 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 08:16:12.285 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 08:16:13.090 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 08:16:13.107 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:16:13.108 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 08:16:13.108 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 08:16:13.199 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 08:16:13.199 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 873 ms
+2022-09-22 08:16:13.473 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 08:16:13.613 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:16:13.632 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 08:16:13.640 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.636 seconds (JVM running for 2.307)
+2022-09-22 08:16:27.723 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 08:16:27.723 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 08:16:27.724 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-09-22 08:16:31.071 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 718305264
+2022-09-22 08:16:31.126 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test2.pdf  size: 192039 bytes
+2022-09-22 08:16:38.586 [http-nio-8080-exec-6] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 928852824
+2022-09-22 08:16:38.595 [http-nio-8080-exec-6] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 08:16:43.599 [http-nio-8080-exec-10] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was received: image.png  , size: 6279 bytes
+2022-09-22 08:16:43.760 [http-nio-8080-exec-10] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was converted from PNG to JPG
+2022-09-22 08:16:43.790 [http-nio-8080-exec-10] INFO  signaturePdf.signaturePdfApp.Logging - First signature was added to PDF file to coordinates x: 106.22 y: 383.95
+2022-09-22 08:17:47.169 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 279600 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 08:17:47.182 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 08:17:48.008 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 08:17:48.021 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:17:48.021 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 08:17:48.022 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 08:17:48.102 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 08:17:48.102 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 882 ms
+2022-09-22 08:17:48.324 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 08:17:48.451 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:17:48.473 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 08:17:48.481 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.591 seconds (JVM running for 2.236)
+2022-09-22 08:17:55.045 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 08:17:55.045 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 08:17:55.046 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-09-22 08:17:58.121 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 250242392
+2022-09-22 08:17:58.171 [http-nio-8080-exec-2] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 08:18:26.186 [http-nio-8080-exec-1] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was received: image.png  , size: 6969 bytes
+2022-09-22 08:18:26.342 [http-nio-8080-exec-1] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was converted from PNG to JPG
+2022-09-22 08:18:26.367 [http-nio-8080-exec-1] INFO  signaturePdf.signaturePdfApp.Logging - First signature was added to PDF file to coordinates x: 106.22 y: 383.95
+2022-09-22 08:18:35.778 [http-nio-8080-exec-4] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was received: image.png  , size: 7793 bytes
+2022-09-22 08:18:35.804 [http-nio-8080-exec-4] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was converted from PNG to JPG
+2022-09-22 08:18:35.807 [http-nio-8080-exec-4] INFO  signaturePdf.signaturePdfApp.Logging - Second signature was added to PDF file to coordinates x: 424.9 y: 383.95
+2022-09-22 08:18:42.710 [http-nio-8080-exec-6] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 250242392
+2022-09-22 08:19:14.169 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Starting SignaturePdfAppApplication using Java 17.0.3 on Rasto-HomePC with PID 223052 (C:\Projects\signaturePdf\target\classes started by Rasťo in C:\Projects\signaturePdf)
+2022-09-22 08:19:14.180 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - No active profile set, falling back to 1 default profile: "default"
+2022-09-22 08:19:15.000 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-09-22 08:19:15.014 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:19:15.015 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-09-22 08:19:15.015 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-22 08:19:15.095 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-09-22 08:19:15.095 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 875 ms
+2022-09-22 08:19:15.345 [main] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-09-22 08:19:15.462 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-09-22 08:19:15.484 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-22 08:19:15.492 [main] INFO  signaturePdf.signaturePdfApp.SignaturePdfAppApplication - Started SignaturePdfAppApplication in 1.579 seconds (JVM running for 2.256)
+2022-09-22 08:19:27.327 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-22 08:19:27.328 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-09-22 08:19:27.328 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-09-22 08:19:30.941 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 573049724
+2022-09-22 08:19:30.990 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 08:19:39.084 [http-nio-8080-exec-6] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 768039204
+2022-09-22 08:19:39.092 [http-nio-8080-exec-6] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test2.pdf  size: 192039 bytes
+2022-09-22 08:19:47.079 [http-nio-8080-exec-9] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 258512492
+2022-09-22 08:19:47.085 [http-nio-8080-exec-9] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 08:19:54.261 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was received: image.png  , size: 5566 bytes
+2022-09-22 08:19:54.423 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was converted from PNG to JPG
+2022-09-22 08:19:54.448 [http-nio-8080-exec-3] INFO  signaturePdf.signaturePdfApp.Logging - Second signature was added to PDF file to coordinates x: 424.9 y: 383.95
+2022-09-22 08:20:05.093 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - File was added to hashmap with id: 703001146
+2022-09-22 08:20:05.099 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - PDF was received: test1.pdf  size: 200893 bytes
+2022-09-22 08:20:26.276 [http-nio-8080-exec-9] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output258512492.pdf
+2022-09-22 08:20:31.158 [http-nio-8080-exec-10] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output768039204.pdf
+2022-09-22 08:20:38.278 [http-nio-8080-exec-1] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 573049724
+2022-09-22 08:20:49.886 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was received: image.png  , size: 4995 bytes
+2022-09-22 08:20:49.904 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - Signature image was converted from PNG to JPG
+2022-09-22 08:20:49.908 [http-nio-8080-exec-5] INFO  signaturePdf.signaturePdfApp.Logging - First signature was added to PDF file to coordinates x: 106.22 y: 383.95
+2022-09-22 08:20:54.778 [http-nio-8080-exec-7] INFO  signaturePdf.signaturePdfApp.Logging - PDF was downloaded: output258512492.pdf
+2022-09-22 08:20:59.022 [http-nio-8080-exec-8] INFO  signaturePdf.signaturePdfApp.Logging - File was deleted with id: 768039204
