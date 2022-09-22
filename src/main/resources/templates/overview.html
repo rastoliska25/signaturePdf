@@ -6,71 +6,70 @@
   function LoopDocuments() {
     let json = [[${ map_list }]];
 
+    var page = document.getElementById('test');
+
     for (let i = 0; i < json.length; i++) {
       let obj = json[i];
       console.log(obj.id + ", " + obj.signatureOne + ", " + obj.signatureTwo);
 
-      var y = document.createElement('input');
-      y.type = "text";
-      y.style.width = '110px';
-      y.value = "ID: " + (obj.id);
-      document.getElementById('test').appendChild(y);
+      var idElement = document.createElement('input');
+      idElement.type = "text";
+      idElement.style.width = '110px';
+      idElement.value = "ID: " + (obj.id);
+      page.appendChild(idElement);
 
-      var t = document.createElement('input');
-      t.type = "text";
-      t.style.width = '220px';
-      t.value = "Date and time: " + (obj.dateTime);
-      document.getElementById('test').appendChild(t);
+      var dateTimeElement = document.createElement('input');
+      dateTimeElement.type = "text";
+      dateTimeElement.style.width = '220px';
+      dateTimeElement.value = "Date and time: " + (obj.dateTime);
+      page.appendChild(dateTimeElement);
 
-      var a = document.createElement('input');
-      a.type = "text";
-      a.style.width = '100px';
-      a.value = "first signed: " + (obj.firstSignature);
-      document.getElementById('test').appendChild(a);
+      var firstSignatureElement = document.createElement('input');
+      firstSignatureElement.type = "text";
+      firstSignatureElement.style.width = '100px';
+      firstSignatureElement.value = "first signed: " + (obj.firstSignature);
+      page.appendChild(firstSignatureElement);
 
-      var s = document.createElement('input');
-      s.type = "text";
-      s.style.width = '120px';
-      s.value = "second signed: " + (obj.secondSignature);
-      document.getElementById('test').appendChild(s);
+      var secondSignatureElement = document.createElement('input');
+      secondSignatureElement.type = "text";
+      secondSignatureElement.style.width = '120px';
+      secondSignatureElement.value = "second signed: " + (obj.secondSignature);
+      page.appendChild(secondSignatureElement);
 
-      var v = document.createElement('input');
-      v.type = "text";
-      v.style.width = '220px';
-      v.value = (obj.signatureOne);
-      document.getElementById('test').appendChild(v);
+      var oneSignatureElement = document.createElement('input');
+      oneSignatureElement.type = "text";
+      oneSignatureElement.style.width = '220px';
+      oneSignatureElement.value = (obj.signatureOne);
+      page.appendChild(oneSignatureElement);
 
-      var z = document.createElement('input');
-      z.type = "text";
-      z.style.width = '250px';
-      z.value = (obj.signatureTwo);
-      document.getElementById('test').appendChild(z);
+      var twoSignatureElement = document.createElement('input');
+      twoSignatureElement.type = "text";
+      twoSignatureElement.style.width = '250px';
+      twoSignatureElement.value = (obj.signatureTwo);
+      page.appendChild(twoSignatureElement);
 
-      var q = document.createElement('input');
-      q.type = "button";
-      q.value = 'Download document';
-      q.style.value = "testing";
-      q.style.width = '300px';
-      q.style.height = '20px';
-      q.name = "testovanie";
-      document.getElementById('test').appendChild(q);
+      var downloadElement = document.createElement('input');
+      downloadElement.type = "button";
+      downloadElement.value = 'Download document';
+      downloadElement.style.width = '300px';
+      downloadElement.style.height = '20px';
+      page.appendChild(downloadElement);
 
-      var m = document.createElement('input');
-      m.type = "button";
-      m.value = 'Delete document';
-      m.style.width = '300px';
-      m.style.height = '20px';
-      m.name = "testovanie";
-      document.getElementById('test').appendChild(m);
+      var deleteElement = document.createElement('input');
+      deleteElement.type = "button";
+      deleteElement.value = 'Delete document';
+      deleteElement.style.width = '300px';
+      deleteElement.style.height = '20px';
+      page.appendChild(deleteElement);
 
-      q.addEventListener('click', function () {
+      downloadElement.addEventListener('click', function () {
         var x = confirm('Do you want to download document? ' + obj.id);
         if (x) {
           window.location.replace("/downloadPdf/" + obj.id);
         }
       });
 
-      m.addEventListener('click', async function () {
+      deleteElement.addEventListener('click', async function () {
         var x = confirm('Do you really want to remove document? ' + obj.id);
         if (x) {
           var urlDelete = '/delete/' + obj.id;
@@ -83,7 +82,7 @@
       });
 
       var linebreak = document.createElement("br");
-      document.getElementById('test').appendChild(linebreak);
+      page.appendChild(linebreak);
 
     };
 
